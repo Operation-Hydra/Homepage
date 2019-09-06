@@ -17,13 +17,13 @@ import {
   MDBCardImage,
   MDBCardText,
   MDBAnimation,
+  MDBView,
+  MDBMask,
 } from 'mdbreact';
 
 //> Images
 // Logo of MDB React
-import MDBLogo from '../../../assets/mdb-react-small.png';
-// Logo of Advertisement Agency Christian Aichner
-import AgencyLogo from '../../../assets/agency-small.png';
+import HydraLogo from '../../../assets/hydra_sm.png';
 // Image of a handshake
 import HireUs from '../../../assets/content/hire-us.jpg';
 // Logo of the React Bootstrap (outrun) project
@@ -33,7 +33,6 @@ import Outrun from '../../../assets/content/outrun.jpg';
 import Projects from '../../../assets/content/projects.jpg';
 
 class HomePage extends React.Component {
-  scrollToTop = () => window.scrollTo(0, 0);
   render() {
     return (
       <>
@@ -46,27 +45,19 @@ class HomePage extends React.Component {
                 className="mx-auto float-none white z-depth-1 py-2 px-2"
               >
                 <MDBCardBody className="text-center">
-                  <h2 className="h2-responsive mb-4">
-                    <strong className="font-weight-bold">
-                      <img
-                        src={AgencyLogo}
-                        alt="mdbreact-logo"
-                        className="pr-2"
-                      />
-                      +
-                      <img
-                        src={MDBLogo}
-                        alt="mdbreact-logo"
-                        className="pr-2 pl-2"
-                      />
-                      Template App
-                    </strong>
-                  </h2>
+                  <MDBView>
+                  <img
+                    src={HydraLogo}
+                    alt="mdbreact-logo"
+                    className="m-auto"
+                  />
+                  <MDBMask />
+                  </MDBView>
                   <MDBRow />
                   <p>React Bootstrap with Material Design</p>
                   <p className="pb-4">
-                    This application shows the actual use of MDB React
-                    components in the application.
+                    This is the official homepage of "Operation Hydra". A nickname for the hosting and 
+                    deployment department of the Advertisement Agency Christian Aichner.
                   </p>
                   <MDBRow className="d-flex flex-row justify-content-center row">
                     <a
