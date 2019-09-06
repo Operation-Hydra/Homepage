@@ -38,7 +38,7 @@ class HomePage extends React.Component {
                   <img
                     src={HydraLogo}
                     alt="mdbreact-logo"
-                    className="m-auto"
+                    className="m-auto logo"
                   />
                   <MDBMask />
                   </MDBView>
@@ -75,10 +75,20 @@ class HomePage extends React.Component {
                   All of our Agency's client homepages are being hosted via GitHub.
                 </p>
                 <p className="text-muted my-3">
-                  <MDBIcon icon="check" className="green-text pr-1" /> No need for Open-Source repositories
-                  <MDBIcon icon="check" className="green-text pl-3 pr-1" /> Cloud-based hosting on Microsoft servers
-                  <MDBIcon icon="check" className="green-text pl-3 pr-1" /> Great performance
-                  <MDBIcon icon="check" className="green-text pl-3 pr-1" /> Very low down-time and failure rate
+                <MDBRow className="flex-center">
+                  <MDBCol md="3">
+                    <MDBIcon icon="check" className="green-text pr-1" /> No need for Open-Source repositories
+                  </MDBCol>
+                  <MDBCol md="3" className="p-0">
+                    <MDBIcon icon="check" className="green-text pl-3 pr-1" /> Cloud-based hosting on Microsoft servers
+                  </MDBCol>
+                  <MDBCol md="3" className="p-0">
+                    <MDBIcon icon="check" className="green-text pl-3 pr-1" /> Great performance
+                  </MDBCol>
+                  <MDBCol md="3">
+                    <MDBIcon icon="check" className="green-text pl-3 pr-1" /> Very low down-time and failure rate
+                  </MDBCol>
+                </MDBRow>
                 </p>
                 <hr className="my-5" />
                 <MDBBtn
