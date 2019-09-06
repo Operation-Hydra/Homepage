@@ -12,11 +12,6 @@ import {
   MDBRow,
   MDBCardBody,
   MDBIcon,
-  MDBCard,
-  MDBCardTitle,
-  MDBCardImage,
-  MDBCardText,
-  MDBAnimation,
   MDBView,
   MDBMask,
   MDBBtn,
@@ -25,13 +20,6 @@ import {
 //> Images
 // Logo of MDB React
 import HydraLogo from '../../../assets/hydra_sm.png';
-// Image of a handshake
-import HireUs from '../../../assets/content/hire-us.jpg';
-// Logo of the React Bootstrap (outrun) project
-// Ref: https://github.com/aichner/React-Outrun
-import Outrun from '../../../assets/content/outrun.jpg';
-// Image of someone coding
-import Projects from '../../../assets/content/projects.jpg';
 
 class HomePage extends React.Component {
   render() {
