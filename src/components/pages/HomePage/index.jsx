@@ -74,22 +74,32 @@ class HomePage extends React.Component {
                 <p className="text-muted mb-1">
                   All of our Agency's client homepages are being hosted via GitHub.
                 </p>
-                <p className="text-muted my-3">
-                <MDBRow className="flex-center">
+                <MDBRow className="my-3">
                   <MDBCol md="3">
-                    <MDBIcon icon="check" className="green-text pr-1" /> No need for Open-Source repositories
+                    <p className="text-muted m-0">
+                    <MDBIcon icon="check" className="green-text pl-3 pr-1" />
+                    No need for Open-Source repositories
+                    </p>
                   </MDBCol>
                   <MDBCol md="3" className="p-0">
-                    <MDBIcon icon="check" className="green-text pl-3 pr-1" /> Cloud-based hosting on Microsoft servers
+                    <p className="text-muted m-0">
+                    <MDBIcon icon="check" className="green-text pl-3 pr-1" />
+                    Cloud-based hosting on Microsoft servers
+                    </p>
                   </MDBCol>
                   <MDBCol md="3" className="p-0">
-                    <MDBIcon icon="check" className="green-text pl-3 pr-1" /> Great performance
+                    <p className="text-muted m-0">
+                    <MDBIcon icon="check" className="green-text pl-3 pr-1" />
+                    Great performance
+                    </p>
                   </MDBCol>
                   <MDBCol md="3">
-                    <MDBIcon icon="check" className="green-text pl-3 pr-1" /> Very low down-time and failure rate
+                    <p className="text-muted m-0">
+                    <MDBIcon icon="check" className="green-text pl-3 pr-1" />
+                    Very low down-time and failure rate
+                    </p>
                   </MDBCol>
                 </MDBRow>
-                </p>
                 <hr className="my-5" />
                 <MDBBtn
                 href="mailto:hydra@aichner-christian.com"
