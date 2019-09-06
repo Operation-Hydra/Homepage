@@ -7,7 +7,7 @@
 <h3 align="center">Where gods deploy.</h3>
 
 <p align="center">
-  This is the official homepage of "Operation Hydra". A nickname for the hosting and deployment department of the Advertisment Agency Christian Aichner.
+  This is the official homepage of "Operation Hydra". A nickname for the hosting and deployment department of the Advertisement Agency Christian Aichner.
   <br>
   <br>
   <a href="https://github.com/Operation-Hydra/Homepage/issues/new?template=bug_report.md">Report bug</a>
