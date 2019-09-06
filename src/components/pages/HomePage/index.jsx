@@ -19,6 +19,7 @@ import {
   MDBAnimation,
   MDBView,
   MDBMask,
+  MDBBtn,
 } from 'mdbreact';
 
 //> Images
@@ -54,20 +55,19 @@ class HomePage extends React.Component {
                   <MDBMask />
                   </MDBView>
                   <MDBRow />
-                  <p>React Bootstrap with Material Design</p>
+                  <p className="lead font-weight-bold">Where gods deploy.</p>
                   <p className="pb-4">
-                    This is the official homepage of "Operation Hydra". A nickname for the hosting and 
-                    deployment department of the Advertisement Agency Christian Aichner.
+                    We are the hosting and deployment branch of the Advertisement Agency Christian Aichner.
                   </p>
                   <MDBRow className="d-flex flex-row justify-content-center row">
                     <a
                       className="border nav-link border-light rounded mr-1"
-                      href="https://mdbootstrap.com/react/"
+                      href="https://github.com/aichner"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <MDBIcon icon="graduation-cap" className="mr-2" />
-                      <span className="font-weight-bold">Official Documentation</span>
+                      <span className="font-weight-bold">Visit us on GitHub</span>
                     </a>
                   </MDBRow>
                 </MDBCardBody>
@@ -76,101 +76,31 @@ class HomePage extends React.Component {
           </MDBFreeBird>
           <MDBContainer>
             <MDBRow>
-              <MDBCol md="12" className="mt-4">
-                <h2 className="text-center my-5 font-weight-bold">
-                  Why is it so great?
+              <MDBCol md="12" className="mt-4 text-center">
+                <h2 className="my-5 font-weight-bold">
+                  Looking for private hosting?
                 </h2>
-                <p className="text-center text-muted mb-1">
-                  Google has designed a Material Design to make the web more
-                  beautiful and more user-friendly.
+                <p className="lead mb-1">
+                  We specialize in the hosting of closed-source projects on GitHub.
                 </p>
-                <p className="text-center text-muted mb-1">
-                  Twitter has created a Bootstrap to support you in faster and
-                  easier development of responsive and effective websites.
+                <p className="text-muted mb-1">
+                  All of our Agency's client homepages are being hosted via GitHub.
                 </p>
-                <p className="text-center text-muted">
-                  We present you a framework containing the best features of
-                  both of them - Material Design for Bootstrap.
+                <p className="text-muted my-3">
+                  <MDBIcon icon="check" className="green-text pr-1" /> No need for Open-Source repositories
+                  <MDBIcon icon="check" className="green-text pl-3 pr-1" /> Cloud-based hosting on Microsoft servers
+                  <MDBIcon icon="check" className="green-text pl-3 pr-1" /> Great performance
+                  <MDBIcon icon="check" className="green-text pl-3 pr-1" /> Very low down-time and failure rate
                 </p>
                 <hr className="my-5" />
-
-                <MDBRow id="categories">
-                  <MDBCol md="4">
-                    <MDBAnimation reveal type="fadeInLeft">
-                      <MDBCard cascade className="my-3 grey lighten-4">
-                        <MDBCardImage
-                          cascade
-                          className="img-fluid"
-                          src={Projects}
-                        />
-                        <MDBCardBody cascade className="text-center">
-                          <MDBCardTitle>
-                            <MDBIcon
-                              icon="github"
-                              brand
-                              className="dark-text pr-2"
-                            />
-                            <strong>GitHub</strong>
-                          </MDBCardTitle>
-                          <MDBCardText>
-                            Find more of our amazing work and templates on GitHub!
-                          </MDBCardText>
-                          <a className="btn btn-outline-mdb-color btn-sm btn-rounded d-inline" href="https://github.com/aichner" target="_blank" rel="noopener noreferrer">
-                              More
-                          </a>
-                        </MDBCardBody>
-                      </MDBCard>
-                    </MDBAnimation>
-                  </MDBCol>
-                  <MDBCol md="4">
-                    <MDBAnimation reveal type="fadeInDown">
-                      <MDBCard cascade className="my-3 grey lighten-4">
-                        <MDBCardImage
-                          cascade
-                          className="img-fluid"
-                          src={Outrun}
-                        />
-                        <MDBCardBody cascade className="text-center">
-                          <MDBCardTitle>
-                            <MDBIcon fab icon="bootstrap" className="pink-text pr-2" />
-                            <strong>React Bootstrap</strong>
-                          </MDBCardTitle>
-                          <MDBCardText>
-                            Ready-to-use components that you can use in your
-                            applications.
-                          </MDBCardText>
-                          <a className="btn btn-outline-mdb-color btn-sm btn-rounded d-inline" href="https://github.com/aichner/React-Outrun" target="_blank" rel="noopener noreferrer">
-                              More
-                          </a>
-                        </MDBCardBody>
-                      </MDBCard>
-                    </MDBAnimation>
-                  </MDBCol>
-                  <MDBCol md="4">
-                    <MDBAnimation reveal type="fadeInRight">
-                      <MDBCard cascade className="my-3 grey lighten-4">
-                        <MDBCardImage
-                          cascade
-                          className="img-fluid"
-                          src={HireUs}
-                        />
-                        <MDBCardBody cascade className="text-center">
-                          <MDBCardTitle>
-                            <MDBIcon icon="code" className="green-text pr-2" />
-                            <strong>Hire us</strong>
-                          </MDBCardTitle>
-                          <MDBCardText>
-                            We provide excellent projects and services to improve the Online Marketing and Image of our satisfied customers.
-                          </MDBCardText>
-
-                          <a className="btn btn-outline-mdb-color btn-sm btn-rounded d-inline" href="https://www.aichner-christian.com/?refer=mdbtemplate" target="_blank" rel="noopener noreferrer">
-                              More
-                          </a>
-                        </MDBCardBody>
-                      </MDBCard>
-                    </MDBAnimation>
-                  </MDBCol>
-                </MDBRow>
+                <MDBBtn
+                href="mailto:hydra@aichner-christian.com"
+                size="lg"
+                className="font-weight-bold"
+                color="elegant"
+                outline>
+                  Request infos about hosting
+                </MDBBtn>
               </MDBCol>
             </MDBRow>
           </MDBContainer>
